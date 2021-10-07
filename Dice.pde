@@ -10,7 +10,7 @@ void draw()
   for(int y = 20; y < 400; y = y + 60){
     for(int x = 20; x < 450; x = x + 60){
   Die bob = new Die(x, y);
-  bob.roll();
+  bob.Roll();
   bob.show();
   sumDice = sumDice + bob.roll;
     }
@@ -32,7 +32,7 @@ class Die //models one single dice cube
     myY = y;
     roll = 0;
   }
-  void roll()
+  void Roll()
   {
     roll = (int)(Math.random()*6+1);
   }
